@@ -1,0 +1,8 @@
+1. docker ps
+2. docker ps -a
+3. docker images
+4. docker stop student-portal
+5. docker rm student-portal
+6. docker rmi student-portal:v1
+
+
