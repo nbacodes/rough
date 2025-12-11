@@ -1,0 +1,7 @@
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements-ml.txt
+
+pip freeze | grep -E "numpy|pandas|scikit-learn|jupyter"
+
+to run ml_setup.py use: python3 ml_setup.py
