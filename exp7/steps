@@ -1,0 +1,32 @@
+Pull the files form github:
+directory structure:
+
+exp7:
+    data
+        raw_data.csv
+    src
+        process.py
+    dvc.yaml
+
+
+
+After getting all the files run all these codes (sare eak sath bhi chala sakete hain)
+
+
+
+sudo snap install dvc --classic
+dvc init
+git add .
+git commit -m "Initialized DVC"
+
+
+dvc add data/raw_data.csv
+git commit -m "Track raw dataset v1"
+
+python3 src/process.py
+
+dvc repro
+
+git add dvc.yaml dvc.lock data/processed_data.csv
+git commit -m "Add DVC pipeline for processing"
+
