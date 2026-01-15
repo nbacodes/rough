@@ -1,0 +1,8 @@
+after pulling all the files:
+
+docker build -t my-app .
+sudo docker run -d -p 8081:5000 --name web-container my-app
+curl http://localhost:8081
+
+then type localhost:8081 in browser
+
