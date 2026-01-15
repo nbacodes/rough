@@ -1,0 +1,9 @@
+stages:
+  process:
+    cmd: python3 src/process.py
+    deps:
+      - src/process.py
+      - data/raw_data.csv
+    outs:
+      - data/processed_data.csv
+
