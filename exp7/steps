@@ -15,7 +15,7 @@ After getting all the files run all these codes (sare eak sath bhi chala sakete 
 
 
 sudo snap install dvc --classic
-dvc init
+dvc init -f
 git add .
 git commit -m "Initialized DVC"
 
