@@ -21,12 +21,13 @@ git commit -m "Initialized DVC"
 
 
 dvc add data/raw_data.csv
+git add .
 git commit -m "Track raw dataset v1"
 
 python3 src/process.py
 
 dvc repro
 
-git add dvc.yaml dvc.lock data/processed_data.csv
+git add .
 git commit -m "Add DVC pipeline for processing"
 
