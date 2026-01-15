@@ -1,0 +1,8 @@
+after bringing everything from github:
+
+pip install skl2onnx
+pip install onnxruntime
+
+python convert_onnx.py
+ls -lh model.onnx
+
