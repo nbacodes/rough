@@ -1,0 +1,7 @@
+after pulling all the files form github:
+
+sudo docker compose up -d --build
+sudo docker compose ps
+curl http://localhost:5000
+curl http://localhost:5000
+
