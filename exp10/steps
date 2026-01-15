@@ -1,0 +1,29 @@
+after pulling everyting from github:
+
+uvicorn main:app --reload
+
+now open a new terminal and make sure that you are correct directory (just press + icon at top left corner of terminal)
+curl -X POST "http://127.0.0.1:8000/predict" \
+ -H "Content-Type: application/json" \
+ -d '{"feature1":5,"feature2":10}'
+
+
+after this command the 
+Expected result is: {"prediction":15}
+
+now go back to initial termial 
+
+pip install pytest
+pytest -q
+
+sudo docker build -t fastapi-ml .
+sudo docker run -p 8000:8000 fastapi-ml
+
+now again go to that terminal where we made a curl request and paste it:
+
+curl -X POST "http://127.0.0.1:8000/predict" \
+ -H "Content-Type: application/json" \
+ -d '{"feature1":7,"feature2":3}'
+
+
+DONE
