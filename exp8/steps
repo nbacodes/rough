@@ -1,0 +1,13 @@
+pull the files form github then:
+
+python3 train.py
+
+You may see an error that MLflow is not installed then do:
+python3 -m pip install --user mlflow
+
+then again run:
+python3 train.py
+
+mlflow ui
+
+on browser open localhost:5000
