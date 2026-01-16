@@ -1,4 +1,4 @@
-after pulling make sure that only app.yaml, Dockerfile, index.html is imp...rest are shit 
+do these after puling in local machine
 
 
 sudo docker build -t app:1.0 .
