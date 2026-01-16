@@ -1,0 +1,6 @@
+after adding everyting from github:
+
+pip install -r requirements.txt
+
+jupyter notebook
+
