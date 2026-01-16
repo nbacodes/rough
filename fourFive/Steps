@@ -1,2 +1,16 @@
 after pulling make sure that only app.yaml, Dockerfile, index.html is imp...rest are shit 
 
+
+sudo docker build -t app:1.0 .
+
+sudo usermod -aG docker $USER
+newgrp docker
+
+minikube start --driver=docker
+
+kubectl apply -f app.yaml
+
+ kubectl get all -n exp4
+
+ minikube service app -n exp4 --url
+
